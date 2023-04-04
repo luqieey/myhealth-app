@@ -1,0 +1,18 @@
+<ion-toolbar>
+     <ion-buttons slot="start">
+          <ion-back-button defaultHref="home" />
+        </ion-buttons>
+    <ion-title>
+
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-content>
+   
+    <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()" placeholder="Search Illness" show-clear-button="focus" value="Show on Focus" ></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <a style="text-decoration: none; color: rgb(255, 255, 255);" [routerLink]="[item.url]">{{item.title}}</a>
+      </ion-item>
+    </ion-list>
+  </ion-content>

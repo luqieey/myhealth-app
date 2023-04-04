@@ -1,0 +1,54 @@
+.background-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: url('../../assets/background3.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+ion-card{
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+    
+
+
+ img{
+    height: 15rem;
+    width: 70rem;
+  
+    
+}
+ ion-card-title{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 1000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+ }
+
+ion-card-content{
+    margin-top: 20px;
+
+    ion-button{
+        width: 130px;
+        height: 45px;
+        --border-radius: 10%;
+        --background:rgb(121, 105, 105);
+        color: #fff;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+
+
+
+
+}
